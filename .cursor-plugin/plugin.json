@@ -1,0 +1,11 @@
+{
+  "name": "varosity",
+  "description": "Generate video, images, voice and music with 60+ AI models (Veo 3.1, Kling 3.0, Seedance, Grok Imagine, FLUX, GPT Image 2, ElevenLabs, Suno) through one Varosity account. Works in Grok Bot, Cursor and Grok Build.",
+  "version": "1.0.0",
+  "author": { "name": "Varosity Inc.", "email": "support@varosity.ai" },
+  "homepage": "https://varosity.ai/grok-bot",
+  "repository": "https://github.com/varosity-ai/grok-bot",
+  "license": "MIT",
+  "keywords": ["varosity", "video-generation", "image-generation", "text-to-speech", "music-generation", "grok-bot"],
+  "logo": "assets/icon.svg"
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "varosity": {
+      "type": "http",
+      "url": "https://varosity.ai/api/mcp"
+    }
+  }
+}
