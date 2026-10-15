@@ -2,7 +2,8 @@
   "mcpServers": {
     "varosity": {
       "type": "http",
-      "url": "https://varosity.ai/api/mcp"
+      "url": "https://varosity.ai/api/mcp",
+      "note": "Varosity hosted MCP server: 60+ video, image, voice and music models. Sign in to your Varosity account in the browser on first connection (OAuth), or send a Varosity API key as 'Authorization: Bearer vsk_...' (create one at https://varosity.ai/app/keys/api-keys). Generations spend prepaid Varosity credits or the user's own provider keys; each result reports the remaining balance."
     }
   }
 }

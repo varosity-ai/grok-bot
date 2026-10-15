@@ -1,0 +1,10 @@
+{
+  "name": "varosity",
+  "version": "1.0.0",
+  "description": "Generate video, images, voice and music with 60+ AI models (Veo 3.1, Kling 3.0, Seedance, Grok Imagine, FLUX, GPT Image 2, ElevenLabs, Suno) through Varosity's hosted MCP server. Pay per generation with Varosity credits or bring your own provider keys.",
+  "author": { "name": "Varosity", "url": "https://github.com/varosity-ai" },
+  "repository": "https://github.com/varosity-ai/grok-bot",
+  "homepage": "https://varosity.ai/grok-bot",
+  "license": "MIT",
+  "keywords": ["varosity", "varosity ai"]
+}

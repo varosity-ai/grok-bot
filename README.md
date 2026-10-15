@@ -40,7 +40,7 @@ On a team plan, an admin may need to allow the server first: Grok Bot follows th
 
 - `mcp.json` / `.mcp.json` — one remote MCP server, `https://varosity.ai/api/mcp`. No local code, no hooks,
   no telemetry.
-- `.cursor-plugin/plugin.json`, `.claude-plugin/plugin.json` — manifests.
+- `.grok-plugin/plugin.json`, `.cursor-plugin/plugin.json`, `.claude-plugin/plugin.json` — manifests.
 - `assets/icon.svg` — logo.
 
 ## Network and credentials
