@@ -21,13 +21,19 @@ on Veo 3.1 Lite is about 21¢.
 
 1. Ask your Bot: *"Connect to Varosity.ai — remote MCP server https://varosity.ai/api/mcp."* Grok Bot adds the
    server and asks for your Varosity key in a secure box.
-2. Create an account at https://varosity.ai/signup (most new accounts get a small starter credit), create a key at
-   https://varosity.ai/app/keys/api-keys and paste it into that box.
+2. Open https://varosity.ai/agent/key?for=grok-bot, sign in or sign up (most new accounts get a small starter
+   credit), press **Create a key for Grok Bot** and paste the key into that box. The key can spend up to $5 a day
+   and expires in 90 days; change or revoke it on the API Keys page.
    Adding the server by hand: name `varosity`, URL `https://varosity.ai/api/mcp`, header
    `Authorization: Bearer vsk_…`. Clients that support OAuth sign-in can skip the key.
 3. Ask for something small first: *"Make a 1¢ test image of a paper boat on a pond with Varosity."*
 
 On a team plan, an admin may need to allow the server first: Grok Bot follows the team's connector policy.
+
+## Paying for more credits
+
+When the balance runs low, the Bot can call `buy_credits` for a Stripe checkout link ($10 or $25 packs) and
+pay it with a card it holds, or hand the link to you. Credits never expire.
 
 ## Jobs to hand your Bot
 
