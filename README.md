@@ -1,6 +1,6 @@
 # Varosity for Grok Bot
 
-Give your Grok Bot a studio. This plugin connects [Varosity](https://varosity.ai) — 60+ video, image, voice and
+Give your Grok Bot a studio. This plugin connects [Varosity](https://varosity.ai) — 70+ video, image, voice and
 music models behind one account — to Grok Bot as a remote MCP server. The same files work in Cursor and Grok Build.
 
 **Guide and examples:** https://varosity.ai/grok-bot
@@ -15,14 +15,14 @@ music models behind one account — to Grok Bot as a remote MCP server. The same
 | Music | Suno, Lyria, ElevenLabs Music |
 
 Live prices: `list_models` (from the Bot) or https://varosity.ai/pricing. Images start at 1¢; a draft video clip
-on Veo 3.1 Lite is about 21¢.
+on Veo 3.1 Lite is about 20¢.
 
 ## Connect
 
 1. Ask your Bot: *"Connect to Varosity.ai — remote MCP server https://varosity.ai/api/mcp."* Grok Bot adds the
    server and asks for your Varosity key in a secure box.
 2. Open https://varosity.ai/agent/key?for=grok-bot, sign in or sign up (most new accounts get a small starter
-   credit), press **Create a key for Grok Bot** and paste the key into that box. The key can spend up to $5 a day
+   credit), press **Create a key for Grok Bot** and paste the key into that box. The key can spend up to the daily limit you pick ($5, $25 or $100; default $25)
    and expires in 90 days; change or revoke it on the API Keys page.
    Adding the server by hand: name `varosity`, URL `https://varosity.ai/api/mcp`, header
    `Authorization: Bearer vsk_…`. Clients that support OAuth sign-in can skip the key.
@@ -32,8 +32,11 @@ On a team plan, an admin may need to allow the server first: Grok Bot follows th
 
 ## Paying for more credits
 
-When the balance runs low, the Bot can call `buy_credits` for a Stripe checkout link ($10 or $25 packs) and
-pay it with a card it holds, or hand the link to you. Credits never expire.
+When the balance runs low, the Bot can call `buy_credits` for a Stripe checkout link. Basic is $12 a month for
+1,500 credits ($15 worth; they reset monthly, cancel any time), or top up any amount from $5 (those credits never
+expire). The Bot can pay a top-up itself if it holds a card, or hand the link to you. For a plan, it is instructed
+to ask you first and to pay only if you approved the recurring charge and its card allows it; a one-time card fails
+at the first renewal. Varosity can't check that approval, so don't give a Bot a card you wouldn't let it use.
 
 ## Jobs to hand your Bot
 
@@ -53,12 +56,13 @@ pay it with a card it holds, or hand the link to you. Credits never expire.
 
 All calls go to `https://varosity.ai/api/mcp` over HTTPS. Authentication is OAuth sign-in to your Varosity
 account, or a Varosity API key (`vsk_…`) you create. Generations spend your prepaid Varosity credits (provider
-price +5%, charged for what is produced; failed renders are not billed) or run on your own provider keys if you
+list price with no markup, charged for what is produced; images and audio round up to the whole cent, 1¢ minimum;
+failed renders are not billed) or run on your own provider keys if you
 add them. Each result reports your remaining balance.
 
 ## Support
 
-support@varosity.ai · https://varosity.ai/support
+jon.kludt@varosity.com · https://varosity.ai/support
 
 Grok and Grok Bot are products of xAI. Varosity is independent and not affiliated with or endorsed by xAI.
 
